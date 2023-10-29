@@ -24,15 +24,15 @@ struct ProfileView: View {
                     VStack(alignment: .leading, spacing: 12) {
                         // fullname and username
                         VStack(alignment: .leading, spacing: 4) {
-                            Text("Charies Leclerc")
+                            Text("yoojaesuk")
                                 .font(.title2)
                                 .fontWeight(.semibold)
                             
-                            Text("charles_leclerc")
+                            Text("유재석")
                                 .font(.subheadline)
                         }
                         
-                        Text("Fomula 1 driver for Scuderia Ferrari")
+                        Text("국민mc 유재석 입니다!")
                             .font(.footnote)
                         
                         Text("2 followers")

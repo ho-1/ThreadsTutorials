@@ -15,7 +15,7 @@ struct ThreadCell: View {
                 
                 VStack(alignment: .leading, spacing: 4) {
                     HStack {
-                        Text("jaesukkie1408")
+                        Text("yoojaesuk")
                             .font(.footnote)
                             .fontWeight(.semibold)
                         
