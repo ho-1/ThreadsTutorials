@@ -10,6 +10,7 @@ import SwiftUI
 struct ThreadsTextFieldModifier: ViewModifier {
     func body(content: Content) -> some View {
         content
+            .autocapitalization(/*@START_MENU_TOKEN@*/.none/*@END_MENU_TOKEN@*/)
             .font(.subheadline)
             .padding(12)
             .background(Color(.systemGray6))
