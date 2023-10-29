@@ -65,6 +65,8 @@ struct EditProfileView: View {
                 }
                 .padding()
             }
+            .navigationTitle("Edit Profile")
+            .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(placement: .navigationBarLeading) {
                     Button("Cancel") {
@@ -82,8 +84,6 @@ struct EditProfileView: View {
                     .foregroundColor(.black)
                 }
             }
-            .navigationTitle("Edit Profile")
-            .navigationBarTitleDisplayMode(.inline)
         }
     }
 }
