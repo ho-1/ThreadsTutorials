@@ -18,6 +18,7 @@ struct LoginView: View {
                 
                 Image("threads_logo")
                     .resizable()
+                    .scaledToFill()
                     .frame(width: 120, height: 120)
                     .padding()
                 
