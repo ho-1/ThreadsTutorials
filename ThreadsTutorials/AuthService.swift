@@ -23,7 +23,7 @@ class AuthService {
         do {
             let result = try await Auth.auth().signIn(withEmail: email, password: password)
             self.userSession = result.user
-            print("DEBUG: Login user \(result.user.uid)")
+            try await UserService.shared.fetchCurrentUser()
         } catch {
             print("DEBUG: Failed to login user with error \(error.localizedDescription)")
         }
@@ -44,6 +44,7 @@ class AuthService {
     func signout() {
         try? Auth.auth().signOut()
         self.userSession = nil
+        UserService.shared.reset()
     }
     
     @MainActor
@@ -56,5 +57,6 @@ class AuthService {
         let user = User(id: id, fullname: fullname, email: email, username: username)
         guard let userData = try? Firestore.Encoder().encode(user) else { return } // FirestoreSwift를 import 해서 Encoder()를 사용할 수 있다.
         try await Firestore.firestore().collection("user").document(id).setData(userData)
+        UserService.shared.currentUser = user
     }
 }
