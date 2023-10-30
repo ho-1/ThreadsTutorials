@@ -12,6 +12,8 @@
 		C60A71582AEF4BCD00DC418C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C60A71572AEF4BCD00DC418C /* User.swift */; };
 		C60A715A2AEF75B800DC418C /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C60A71592AEF75B800DC418C /* UserService.swift */; };
 		C60A715D2AEF770D00DC418C /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C60A715C2AEF770D00DC418C /* ProfileViewModel.swift */; };
+		C60A71602AEFA8D800DC418C /* ExploreViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C60A715F2AEFA8D800DC418C /* ExploreViewModel.swift */; };
+		C60A71622AEFB13100DC418C /* PreviewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C60A71612AEFB13100DC418C /* PreviewProvider.swift */; };
 		C697083A2AEDE5CE0089012A /* ThreadsTutorialsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69708392AEDE5CE0089012A /* ThreadsTutorialsApp.swift */; };
 		C697083C2AEDE5CE0089012A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C697083B2AEDE5CE0089012A /* ContentView.swift */; };
 		C697083E2AEDE5CF0089012A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C697083D2AEDE5CF0089012A /* Assets.xcassets */; };
@@ -65,6 +67,8 @@
 		C60A71572AEF4BCD00DC418C /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		C60A71592AEF75B800DC418C /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		C60A715C2AEF770D00DC418C /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		C60A715F2AEFA8D800DC418C /* ExploreViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreViewModel.swift; sourceTree = "<group>"; };
+		C60A71612AEFB13100DC418C /* PreviewProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewProvider.swift; sourceTree = "<group>"; };
 		C69708362AEDE5CE0089012A /* ThreadsTutorials.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThreadsTutorials.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C69708392AEDE5CE0089012A /* ThreadsTutorialsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadsTutorialsApp.swift; sourceTree = "<group>"; };
 		C697083B2AEDE5CE0089012A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -143,6 +147,14 @@
 			isa = PBXGroup;
 			children = (
 				C60A715C2AEF770D00DC418C /* ProfileViewModel.swift */,
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		C60A715E2AEFA8C600DC418C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C60A715F2AEFA8D800DC418C /* ExploreViewModel.swift */,
 			);
 			name = ViewModel;
 			sourceTree = "<group>";
@@ -235,6 +247,7 @@
 		C69708662AEDF0500089012A /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				C60A71612AEFB13100DC418C /* PreviewProvider.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -327,6 +340,7 @@
 		C697087B2AEE31AA0089012A /* Explore */ = {
 			isa = PBXGroup;
 			children = (
+				C60A715E2AEFA8C600DC418C /* ViewModel */,
 				C697087E2AEE31C70089012A /* View */,
 			);
 			name = Explore;
@@ -577,6 +591,7 @@
 				C6A796522AEE9AB9009F5281 /* RegistrationViewModel.swift in Sources */,
 				C697087A2AEE31540089012A /* FeedView.swift in Sources */,
 				C6A796542AEE9B72009F5281 /* AuthService.swift in Sources */,
+				C60A71622AEFB13100DC418C /* PreviewProvider.swift in Sources */,
 				C69708972AEE7B230089012A /* EditProfileView.swift in Sources */,
 				C697086D2AEDF29E0089012A /* LoginView.swift in Sources */,
 				C60A715A2AEF75B800DC418C /* UserService.swift in Sources */,
@@ -585,6 +600,7 @@
 				C60A71562AEF410700DC418C /* LoginViewModel.swift in Sources */,
 				C697088F2AEE42A00089012A /* CircularProfileImageView.swift in Sources */,
 				C69708912AEE43200089012A /* UserCell.swift in Sources */,
+				C60A71602AEFA8D800DC418C /* ExploreViewModel.swift in Sources */,
 				C697083C2AEDE5CE0089012A /* ContentView.swift in Sources */,
 				C69708942AEE45AE0089012A /* ProfileThreadFilter.swift in Sources */,
 				C60A71542AEF355000DC418C /* ContentViewModel.swift in Sources */,
