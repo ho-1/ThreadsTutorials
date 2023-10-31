@@ -11,7 +11,7 @@ struct LoginView: View {
     @StateObject var viewModel = LoginViewModel()
     
     var body: some View {
-        NavigationStack {
+        NavigationView {
             VStack {
                 Spacer()
                 
@@ -22,7 +22,7 @@ struct LoginView: View {
                     .padding()
                 
                 TextField("Enter your email", text: $viewModel.email)
-                    .autocapitalization(/*@START_MENU_TOKEN@*/.none/*@END_MENU_TOKEN@*/)
+                    .autocapitalization(.none)
                     .modifier(ThreadsTextFieldModifier())
                 
                 SecureField("Enter your password", text: $viewModel.password)
@@ -37,7 +37,7 @@ struct LoginView: View {
                         .padding(.vertical)
                         .padding(.trailing, 26.0)
                         .foregroundColor(.black)
-                        .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .trailing)
+                        .frame(maxWidth: .infinity, alignment: .trailing)
                 }
                 
                 Button {
@@ -64,7 +64,7 @@ struct LoginView: View {
                         Text("Don't have a account?")
                         
                         Text("Sign up")
-                            .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
+                            .fontWeight(.bold)
                     }
                     .foregroundColor(.black)
                     .font(.footnote)

@@ -51,6 +51,7 @@
 		C6B506992AF0FC02005E7CF9 /* Thread.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B506982AF0FC01005E7CF9 /* Thread.swift */; };
 		C6B5069C2AF0FC9D005E7CF9 /* CreateThreadViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B5069B2AF0FC9D005E7CF9 /* CreateThreadViewModel.swift */; };
 		C6B5069E2AF0FCFF005E7CF9 /* ThreadService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B5069D2AF0FCFF005E7CF9 /* ThreadService.swift */; };
+		C6B506A12AF11B61005E7CF9 /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B506A02AF11B61005E7CF9 /* FeedViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -113,6 +114,7 @@
 		C6B506982AF0FC01005E7CF9 /* Thread.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Thread.swift; sourceTree = "<group>"; };
 		C6B5069B2AF0FC9D005E7CF9 /* CreateThreadViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateThreadViewModel.swift; sourceTree = "<group>"; };
 		C6B5069D2AF0FCFF005E7CF9 /* ThreadService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadService.swift; sourceTree = "<group>"; };
+		C6B506A02AF11B61005E7CF9 /* FeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -371,6 +373,7 @@
 			isa = PBXGroup;
 			children = (
 				C69708782AEE314E0089012A /* View */,
+				C6B5069F2AF11B52005E7CF9 /* ViewModel */,
 			);
 			name = Feed;
 			sourceTree = "<group>";
@@ -517,6 +520,14 @@
 			isa = PBXGroup;
 			children = (
 				C6B5069B2AF0FC9D005E7CF9 /* CreateThreadViewModel.swift */,
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		C6B5069F2AF11B52005E7CF9 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C6B506A02AF11B61005E7CF9 /* FeedViewModel.swift */,
 			);
 			name = ViewModel;
 			sourceTree = "<group>";
@@ -681,6 +692,7 @@
 				C697088F2AEE42A00089012A /* CircularProfileImageView.swift in Sources */,
 				C69708912AEE43200089012A /* UserCell.swift in Sources */,
 				C60A71602AEFA8D800DC418C /* ExploreViewModel.swift in Sources */,
+				C6B506A12AF11B61005E7CF9 /* FeedViewModel.swift in Sources */,
 				C697083C2AEDE5CE0089012A /* ContentView.swift in Sources */,
 				C6B506942AF0B753005E7CF9 /* ImageUploader.swift in Sources */,
 				C69708942AEE45AE0089012A /* ProfileThreadFilter.swift in Sources */,
