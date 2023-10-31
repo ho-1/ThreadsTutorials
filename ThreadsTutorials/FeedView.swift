@@ -20,7 +20,7 @@ struct FeedView: View {
                 }
             }
             .refreshable {
-                print("DEBUG: Refresh Threads")
+                Task { try await viewModel.fetchThread() }
             }
             .navigationTitle("Thread")
             .navigationBarTitleDisplayMode(.inline)

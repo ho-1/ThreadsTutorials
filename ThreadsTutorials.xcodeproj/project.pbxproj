@@ -52,6 +52,8 @@
 		C6B5069C2AF0FC9D005E7CF9 /* CreateThreadViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B5069B2AF0FC9D005E7CF9 /* CreateThreadViewModel.swift */; };
 		C6B5069E2AF0FCFF005E7CF9 /* ThreadService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B5069D2AF0FCFF005E7CF9 /* ThreadService.swift */; };
 		C6B506A12AF11B61005E7CF9 /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B506A02AF11B61005E7CF9 /* FeedViewModel.swift */; };
+		C6B506A52AF12828005E7CF9 /* UserContentListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B506A42AF12828005E7CF9 /* UserContentListViewModel.swift */; };
+		C6B506A72AF147C7005E7CF9 /* Timestamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B506A62AF147C7005E7CF9 /* Timestamp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -115,6 +117,8 @@
 		C6B5069B2AF0FC9D005E7CF9 /* CreateThreadViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateThreadViewModel.swift; sourceTree = "<group>"; };
 		C6B5069D2AF0FCFF005E7CF9 /* ThreadService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadService.swift; sourceTree = "<group>"; };
 		C6B506A02AF11B61005E7CF9 /* FeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewModel.swift; sourceTree = "<group>"; };
+		C6B506A42AF12828005E7CF9 /* UserContentListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserContentListViewModel.swift; sourceTree = "<group>"; };
+		C6B506A62AF147C7005E7CF9 /* Timestamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Timestamp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -199,8 +203,8 @@
 		C60A71682AEFEC8800DC418C /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				C60A71692AEFECA300DC418C /* ProfileHeaderView.swift */,
-				C60A716B2AEFF4CD00DC418C /* UserContentListView.swift */,
+				C6B506A22AF12812005E7CF9 /* View */,
+				C6B506A32AF12817005E7CF9 /* ViewModel */,
 			);
 			name = Components;
 			sourceTree = "<group>";
@@ -297,6 +301,7 @@
 			isa = PBXGroup;
 			children = (
 				C60A71612AEFB13100DC418C /* PreviewProvider.swift */,
+				C6B506A62AF147C7005E7CF9 /* Timestamp.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -382,7 +387,6 @@
 			isa = PBXGroup;
 			children = (
 				C69708792AEE31540089012A /* FeedView.swift */,
-				C697088B2AEE383A0089012A /* ThreadCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -461,6 +465,7 @@
 			isa = PBXGroup;
 			children = (
 				C697088E2AEE42A00089012A /* CircularProfileImageView.swift */,
+				C697088B2AEE383A0089012A /* ThreadCell.swift */,
 				C69708902AEE43200089012A /* UserCell.swift */,
 			);
 			name = Components;
@@ -528,6 +533,23 @@
 			isa = PBXGroup;
 			children = (
 				C6B506A02AF11B61005E7CF9 /* FeedViewModel.swift */,
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		C6B506A22AF12812005E7CF9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C60A71692AEFECA300DC418C /* ProfileHeaderView.swift */,
+				C60A716B2AEFF4CD00DC418C /* UserContentListView.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		C6B506A32AF12817005E7CF9 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C6B506A42AF12828005E7CF9 /* UserContentListViewModel.swift */,
 			);
 			name = ViewModel;
 			sourceTree = "<group>";
@@ -680,6 +702,7 @@
 				C697087A2AEE31540089012A /* FeedView.swift in Sources */,
 				C6A796542AEE9B72009F5281 /* AuthService.swift in Sources */,
 				C60A71622AEFB13100DC418C /* PreviewProvider.swift in Sources */,
+				C6B506A72AF147C7005E7CF9 /* Timestamp.swift in Sources */,
 				C6B506922AF0B2D3005E7CF9 /* EditProfileViewModel.swift in Sources */,
 				C69708972AEE7B230089012A /* EditProfileView.swift in Sources */,
 				C697086D2AEDF29E0089012A /* LoginView.swift in Sources */,
@@ -688,6 +711,7 @@
 				C60A716C2AEFF4CD00DC418C /* UserContentListView.swift in Sources */,
 				C69708882AEE32560089012A /* ProfileView.swift in Sources */,
 				C60A71562AEF410700DC418C /* LoginViewModel.swift in Sources */,
+				C6B506A52AF12828005E7CF9 /* UserContentListViewModel.swift in Sources */,
 				C6B5069C2AF0FC9D005E7CF9 /* CreateThreadViewModel.swift in Sources */,
 				C697088F2AEE42A00089012A /* CircularProfileImageView.swift in Sources */,
 				C69708912AEE43200089012A /* UserCell.swift in Sources */,
